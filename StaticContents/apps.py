@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class SitetestConfig(AppConfig):
+class StaticContentsConfig(AppConfig):
     name = 'StaticContents'

@@ -1,8 +1,8 @@
-{% extends "sitetest/base.html" %}
+{% extends "StaticContents/base.html" %}
 {% load static %}
 
 {% block optcss %}
-<link rel="stylesheet" type="text/css" href="{% static 'sitetest/blockspecif.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'StaticContents/blockspecif.css' %}">
 {% endblock optcss %}
 
 
@@ -24,7 +24,7 @@
         </fieldset>
     </div>
     <div class="col-md-auto">
-        <img src="{% static 'sitetest/index.png'%}" class="img-fluid" alt="Italian Trulli">
+        <img src="{% static 'StaticContents/index.png'%}" class="img-fluid" alt="Italian Trulli">
     </div>
 </div>
 

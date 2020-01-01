@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'StaticContents.apps.SitetestConfig',
+    'StaticContents.apps.StaticContentsConfig',
 ]
 
 MIDDLEWARE = [
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DjangoFull.urls'
+ROOT_URLCONF = 'DjangoBase.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DjangoFull.wsgi.application'
+WSGI_APPLICATION = 'DjangoBase.wsgi.application'
 
 
 # Database
