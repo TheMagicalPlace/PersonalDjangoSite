@@ -1,0 +1,263 @@
+{% extends "sitetest/base.html" %}
+{% load static %}
+
+{% block optcss %}
+<link rel="stylesheet" type="text/css" href="{% static 'sitetest/blockspecif.css' %}">
+{% endblock optcss %}
+
+
+{% block content %}
+<body>
+<h1>Main Page</h1>
+
+
+<div class="row justify-content-md-right">
+    <div class="col-sm">
+        <fieldset class="content-section">
+            <legend class="cborder">Contact Information</legend>
+            <address>
+                Anthony Christou<br>
+                21853 Westcroft Drive<br>
+                Grosse Ile, MI , 48138<br>
+                (734) - 493-2491<br>
+            </address>
+        </fieldset>
+    </div>
+    <div class="col-md-auto">
+        <img src="{% static 'sitetest/index.png'%}" class="img-fluid" alt="Italian Trulli">
+    </div>
+</div>
+
+
+<fieldset class="content-section">
+    <legend class="cborder">Summary</legend>
+    <p>I am a bachelors-level Chemical Engineer with my main expertise in computer modeling and mathematical simulation
+        of processes, plants and production lines. I have demonstrable knowledge and experience in use and development
+        of process simulation software. I am seeking a growth-orientated position which will utilize my education and
+        skills in computer-assisted analysis of plant management and process optimization. </p>
+</fieldset>
+
+<fieldset class="content-section">
+    <legend class="cborder">Education</legend>
+    <dl>
+        <dt>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="justify-content-md-right" id="edu">Bachelor of Science in Chemical Engineering</div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate" id="clge">Michigan State University, May, 2019</div>
+                </div>
+            </div>
+        </dt>
+        <dd>
+            <ul class="short-ul-dist">
+                <li class="short-ul-dist">
+                    <p id="course-list">
+                        <span class="inline-desc">Relevant Courses:</span> Process Design and Optimization, Process
+                        Analysis and Control,
+                        Fluid Flow and Heat Transfer, Material and Energy Balances, Modeling and Analysis of Transport
+                        Phenomena, Laboratory Practice and Statistics, Thermodynamics for Chemical Engineering, Chemical
+                        Reaction Engineering
+
+                    </p>
+                </li>
+                <li class="li-overwrite">
+                    <p class="inline-desc">Technical Skills:</p>
+                    <ul class="li-overwrite">
+                        <li class="li-overwrite">
+                            <p class="skill-list">
+                                <span class="inline-desc">Numerical Simulation: </span> Process Design and Simulation
+                                Software (ASPEN Plus), Numpy (Linear Algebra package), Scipy (ODE solvers), Pandas
+                                (Large data management)
+                            </p>
+                        </li>
+                        <li class="li-overwrite">
+                            <p class="skill-list">
+                                <span class="inline-desc">Development Skills: </span> MATLAB, Simulink, C++, Python,
+                                Matplotlib, GIT
+                            </p>
+                        </li>
+
+                        <li class="li-overwrite">
+                            <p class="skill-list">
+                                <span class="inline-desc">Database Skills: </span> SQLite, MySQL
+                            </p>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </dd>
+
+    </dl>
+</fieldset>
+
+<!--
+<fieldset class="content-section">
+    <legend class="cborder">Relevant Coursework</legend>
+</fieldset>
+-->
+
+<fieldset class="content-section">
+    <legend class="cborder">Degree Projects</legend>
+    <dl>
+        <dt>
+
+            <div class="row">
+                <div class="col-8">
+                    <div class="justify-content-md-right"><p>Senior design project <span class="inlne-down">– ALCHE 2019 design project</span>
+                    </p></div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate"><i>01/2019 – 03/2019</i></div>
+                </div>
+            </div>
+
+        </dt>
+        <dd>
+            <ul>
+                <li>
+                    <p>Designed and simulated a pharmaceutical plant in MATLAB to produce antibody medication to meet
+                        target market demand. Utilized a series of coupled ordinary differential rate equations to
+                        simulate the growth kinetics of recombinant E. Coli. </p>
+
+                </li>
+                <li>
+                    <p>Programmed in design parameters that allowed forecasting to meet future critical production
+                        levels with design considerations as well as ensuring adherence to OSHA standards and cGMPgit git
+                        regulations</p>
+                </li>
+                <li>
+                    <p> Predicted economic metrics and internal consistencies to maintain effective design to ensure
+                        cost effectiveness </p>
+                </li>
+                <li>
+                    <p>Designed a method for the capture and neutralization of hazardous waste gas byproduct hydrogen
+                        sulfide, as well as the treatment of the biologically active wastewater produced </p>
+                </li>
+            </ul>
+        </dd>
+        <dt>
+            <div class="row">
+                <div class="col-8">
+                    <div class="justify-content-md-right"><p>Biofuel production project
+                    </p></div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate"><i>11/2018 – 12/2018</i></div>
+                </div>
+            </div>
+        </dt>
+        <dd>
+            <ul>
+                <li>
+                    <p>Utilized a process simulation package (Aspen Plus) to design a system of distillation columns to
+                        isolate and purify isoamyl alcohol (to 99% purity) and ethanol (to 92% purity) from a mixed
+                        alcohol feed, while meeting purity standards for commercial sale </p>
+
+                </li>
+                <li>
+                    <p>Used computer simulation tools to develop a model of the system to match real-world conditions.
+                        Used this system to analyze many configurations of feed and outlet staging to optimize product
+                        purity and recovery</p>
+                </li>
+                <li>
+                    <p> Collaborated with a team of five, while organizing meetings and tasks to deliver technical
+                        results and detailed data reports. Presented solutions and recommendations in design review to a
+                        panel of professors </p>
+                </li>
+
+            </ul>
+        </dd>
+
+        </ul>
+
+
+        </dd>
+
+    </dl>
+</fieldset>
+
+
+<fieldset class="content-section">
+    <legend class="cborder">Personal Projects</legend>
+    <dl>
+        <dt>
+            <div class="row">
+                <div class="col-4">
+                    <div class="justify-content-md-right"><p>CONCERT-LOCATION-AND-ALERT
+                    </p></div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate"><i>GITHUB.COM/THEMAGICALPLACE/CONCERT-LOCATION-AND-ALERT</i></div>
+                </div>
+            </div>
+        </dt>
+        <dd>
+            <p>
+                A program that tracks local concerts for user selected artists. Concert data is gathered through web
+                scraping from
+                Songkick. Features Spotify integration through a modified version of spotipy, optional startup
+                configuration, and a
+                simple GUI made with tkinter .
+            </p>
+
+        </dd>
+        <dt>
+            <div class="row">
+                <div class="col-4">
+                    <div class="justify-content-md-right"><p>Smart Job Classifier
+                    </p></div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate"><i>GITHUB.COM/THEMAGICALPLACE/CONCERT-LOCATION-AND-ALERT</i></div>
+                </div>
+            </div>git git
+        </dt>
+        <dd>
+            <p>A program that downloads, formats and sorts job postings into four categories using Linear Support Vector
+                Classification from scikit-learn based on user supplied samples of each with ~60% accuracy.
+            </p>
+
+        </dd>
+        <dt>
+            <div class="row">
+                <div class="col-4">
+                    <div class="justify-content-md-right"><p>Robots Playing Chess
+                    </p></div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate"><i> HTTPS://GITHUB.COM/THEMAGICALPLACE/ROBOTSPLAYINGCHE</i></div>
+                </div>
+            </div>
+        </dt>
+        <dd>
+            <p>Object-oriented chess implementation built in part for testing how various goal-seeking strategies work against each other. Current best AI utilizes a multiprocessing/threading enabled implementation of a MinMax algorithm with alpha-beta pruning.
+            </p>
+
+        </dd>
+
+    </dl>
+
+</fieldset>
+
+<fieldset class="content-section">
+    <legend class="cborder">Other</legend>
+    <dl>
+        <dt>
+            <div class="row">
+                <div class="col-8">
+                    <div class="justify-content-md-right"><p id="end">Eagle Scout<span class="inlne-down"> - Boy Scouts of America</span>
+                    </p></div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate"><i>May 2013</i></div>
+                </div>
+            </div>
+        </dt>
+
+    </dl>
+</fieldset>
+</body>
+{% endblock content %}
