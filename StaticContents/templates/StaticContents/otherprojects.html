@@ -1,0 +1,112 @@
+{% extends "StaticContents/base.html" %}
+{% load static %}
+
+{% block optcss %}
+<link rel="stylesheet" type="text/css" href="{% static 'StaticContents/projectpage.css' %}">
+
+{%endblock optcss%}
+
+
+{%block content%}
+<div class="container" id="Title">
+    <h1>Other Projects</h1>
+    <p>This page contains a brief description of and a github link to some of the other projects I have worked or been
+        working on.
+        Note that most of the projects shown here are either fairly minor or not fully complete, with clarification
+        given for the latter
+        within the project description as applicable.</p>
+</div>
+
+<!--Template for adding projects
+ <dl>
+        <dt>
+            <div class="row">
+                <div class="col-8">
+                    <div class="justify-content-md-right">
+                        <p>ProjectName</p>
+                    </div>
+                </div>
+                <div class="col-sm justify-content-md-right">
+                    <div class="float-right projdate"><a href="#">Github Link</a></div>
+                </div>
+            </div>
+
+        </dt>
+        <dd>
+            <p class="minor-project-desc">
+            Text
+            </p>
+        </dd>
+-->
+
+
+<div class="container">
+    <fieldset class="borders">
+        <dl>
+            <dt>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="justify-content-md-right">
+                            <p>Chemical Engineering Estimate Utilities</p>
+                        </div>
+                    </div>
+                    <div class="col-sm justify-content-md-right">
+                        <div class="float-right projdate"><a
+                                href="https://github.com/TheMagicalPlace/ChemicalEngineeringFunctions">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </dt>
+            <dd>
+                <div>
+                    <p class="minor-project-desc">
+                        A collection of programs for quick initial estimates for unit operation equipment design.
+                        Currently
+                        includes
+                        modules for graphical analysis of trayed distillation columns using the McCabe-Thiele method,
+                        numerical analysis of
+                        distillation towers using the FUG Method, and graphical analysis of stages required for
+                        liquid-liquid extraction using the Hunter-Nash method.
+
+                        For chemical reactor design, modules for batch and CSTR reactor design and analysis are
+                        partially
+                        complete, with PFR/PBR reactor functions
+                        to be implemented at a later time.
+                    </p>
+                </div>
+
+            </dd>
+            <!---->
+            <dt>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="justify-content-md-right">
+                            <p>Procedural Generation One-offs</p>
+                        </div>
+                    </div>
+                    <div class="col-sm justify-content-md-right">
+                        <div class="float-right projdate"><a
+                                href="ProceduralGenerationOneOffs">Github Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </dt>
+            <dd>
+                <div>
+                    <p class="minor-project-desc">
+                        A collection of files for testing out approaches to procedural generation. All files in the repositiory
+                        are independent of one another, with the only dependencies being the third-party modules specific to each one,
+                        with the most frequent being NumPy and matplotlib.
+                    </p>
+                </div>
+
+            </dd>
+        </dl>
+
+
+    </fieldset>
+</div>
+
+{%endblock content%}
