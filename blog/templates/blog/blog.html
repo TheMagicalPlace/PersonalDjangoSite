@@ -1,0 +1,39 @@
+
+{% extends "blog/blogbase.html" %}
+
+{%load static%}
+
+
+
+{% block optcss %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/blog.css' %}">
+{% endblock %}
+
+
+
+
+{% block content %}
+    {% for post in posts %}
+
+        <div class="container">
+            <fieldset class="blog-post">
+                <legend class="blog-post-legend">{{post.title}}</legend>
+                <div class="container blog-post-body">
+                    <p class="blog-content">{{post.content}}</p>
+
+                    <div class="blog-post-metadata">
+                        <p class="blog-post-bottom">
+                        <span class="blog-author">{{post.author}}</span> - <span class="blog-date"> {{post.date_posted|date:"F d , Y"}}</span>
+                    </p>
+
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+
+
+
+    {% endfor %}
+{% endblock %}
+

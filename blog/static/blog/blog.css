@@ -1,0 +1,79 @@
+.block{
+    color:blue;
+}
+
+legend.cborder {
+    background : #ffffff;
+    border : 1px solid #dddddd;
+    border-radius : 6px;
+    width:inherit; /* Or auto */
+    padding:0px 10px; /* To give a bit of padding on the left and right */
+}
+
+.projdate{
+
+}
+
+fieldset.content-section {
+  background: #ffffff;
+  padding: 5px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.inline-desc{
+font-weight: 600;
+font-style: italic;
+
+
+
+}
+#clge{
+font-weight: 100;
+font-style: italic;
+}
+
+#edu{
+font-weight: 600;
+font-size: 18px;
+}
+
+#course-list
+{
+font-weight:350;
+font-size: 16px;
+line-height:1.15;
+font-style: italic;
+}
+
+.skill-list
+{
+font-weight = 250;
+font-size:14px;
+font-style: italic;
+line-height:1.15;
+margin-bottom:8px;
+
+}
+
+.short-ul-dist{
+margin : 5px 0px;
+}
+
+.li-overwrite{
+line-height : 1.5px;
+}
+
+.inlne-down{
+font-style:italic;
+font-weight:250;
+}
+
+#end
+{
+margin-bottom : 0;
+}
+
+dl.end{
+margin-bottom : 0;
+}
