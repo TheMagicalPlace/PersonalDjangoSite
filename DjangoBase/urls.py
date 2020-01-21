@@ -22,5 +22,6 @@ urlpatterns = [
     path('',include('StaticContents.urls')),
         path('',include('blog.urls')),
          path('admin/', admin.site.urls),
-    path('',include('users.urls'))
+    path('',include('users.urls')),
+    path('',include('CLAAServer.urls'))
 ]

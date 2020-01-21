@@ -1,6 +1,17 @@
+
+
+
+
+img{
+    border-style : solid;
+    border-radius: 80px;
+}
+
 .block{
     color:blue;
 }
+
+
 
 legend.cborder {
     background : #ffffff;

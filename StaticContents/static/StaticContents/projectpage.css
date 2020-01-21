@@ -1,0 +1,53 @@
+
+p{
+    margin-bottom: inherit;
+    margin-top: inherit;
+}
+
+hr{
+margin-top : 0.25rem;
+margin-bottom : 0.25rem;
+}
+.main-heading{
+    text-align :center;
+    margin-top :  5px;
+    margin-bottom :  5px;
+    font-weight:500;
+}
+
+.project-container{
+    background: #ffffff;
+    border-style : solid;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.project-head{
+    font-family: "Times New Roman", Times, serif;
+        margin-bottom : 0px;
+    line-height: 1.4;
+}
+
+
+.project-body{
+    font-family: "Times New Roman", Times, serif;
+    margin-left : 10px;
+    margin-bottom : 10px;
+
+    line-height: 1.4;
+    font-style: italic;
+    font-weight : 300;
+
+
+}
+
+.pr-container{
+    margin-top: 20px;
+    margin-bottom : 20px;
+}
+
+.row{
+margin-bottom : -10px;
+}

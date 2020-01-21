@@ -2,14 +2,17 @@
 {% load static %}
 
 {% block optcss %}
-<link rel="stylesheet" type="text/css" href="{% static 'StaticContents/projectpage.css' %}">
+<link href="{% static 'StaticContents/projectpage.css' %}" rel="stylesheet" type="text/css">
 
 {%endblock optcss%}
 
 
 {%block content%}
-<div class="container" id="Title">
-    <h1>Other Projects</h1>
+<div class="container project-container">
+    <div class="main-heading" id="Title">
+        <h2>Other Projects</h2>
+    </div>
+    <hr>
     <p>This page contains a brief description of and a github link to some of the other projects I have worked or been
         working on.
         Note that most of the projects shown here are either fairly minor or not fully complete, with clarification
@@ -40,73 +43,71 @@
 -->
 
 
-<div class="container">
-    <fieldset class="borders">
-        <dl>
-            <dt>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="justify-content-md-right">
-                            <p>Chemical Engineering Estimate Utilities</p>
-                        </div>
-                    </div>
-                    <div class="col-sm justify-content-md-right">
-                        <div class="float-right projdate"><a
-                                href="https://github.com/TheMagicalPlace/ChemicalEngineeringFunctions">Github Link</a>
-                        </div>
-                    </div>
+<div class="project-container">
+    <div class="container pr-container">
+        <div class="row">
+            <div class="col-8">
+                <div class="project-head">
+                    <p>Chemical Engineering Estimate Utilities</p>
                 </div>
-
-            </dt>
-            <dd>
-                <div>
-                    <p class="minor-project-desc">
-                        A collection of programs for quick initial estimates for unit operation equipment design.
-                        Currently
-                        includes
-                        modules for graphical analysis of trayed distillation columns using the McCabe-Thiele method,
-                        numerical analysis of
-                        distillation towers using the FUG Method, and graphical analysis of stages required for
-                        liquid-liquid extraction using the Hunter-Nash method.
-
-                        For chemical reactor design, modules for batch and CSTR reactor design and analysis are
-                        partially
-                        complete, with PFR/PBR reactor functions
-                        to be implemented at a later time.
-                    </p>
+            </div>
+            <div class="col-sm project-body">
+                <div class="float-right projdate project-head"><a
+                        href="https://github.com/TheMagicalPlace/ChemicalEngineeringFunctions">Github Link</a>
                 </div>
-
-            </dd>
-            <!---->
-            <dt>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="justify-content-md-right">
-                            <p>Procedural Generation One-offs</p>
-                        </div>
-                    </div>
-                    <div class="col-sm justify-content-md-right">
-                        <div class="float-right projdate"><a
-                                href="ProceduralGenerationOneOffs">Github Link</a>
-                        </div>
-                    </div>
-                </div>
-
-            </dt>
-            <dd>
-                <div>
-                    <p class="minor-project-desc">
-                        A collection of files for testing out approaches to procedural generation. All files in the repositiory
-                        are independent of one another, with the only dependencies being the third-party modules specific to each one,
-                        with the most frequent being NumPy and matplotlib.
-                    </p>
-                </div>
-
-            </dd>
-        </dl>
-
-
-    </fieldset>
+            </div>
+        </div>
+        <hr>
+        <div class="project-body">
+            <p class="minor-project-desc">
+                A collection of programs for quick initial estimates for unit operation equipment design.
+                Currently
+                includes
+                modules for graphical analysis of trayed distillation columns using the McCabe-Thiele method,
+                numerical analysis of
+                distillation towers using the FUG Method, and graphical analysis of stages required for
+                liquid-liquid extraction using the Hunter-Nash method.
+            </p>
+            <p class="minor-project-desc">
+                For chemical reactor design, modules for batch and CSTR reactor design and analysis are
+                partially
+                complete, with PFR/PBR reactor functions
+                to be implemented at a later time.
+            </p>
+        </div>
+    </div>
 </div>
+
+
+<!---->
+<div class="project-container">
+    <div class="container pr-container">
+        <div class="row">
+            <div class="col-8">
+                <div class="project-head">
+                    <p>Procedural Generation One-offs</p>
+                </div>
+            </div>
+            <div class="col-sm project-body">
+                <div class="float-right projdate project-head"><a
+                        href="ProceduralGenerationOneOffs">Github Link</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="project-body">
+            <p class="minor-project-desc">
+                A collection of files for testing out approaches to procedural generation. All files in the
+                repositiory
+                are independent of one another, with the only dependencies being the third-party modules specific to
+                each one,
+                with the most frequent being NumPy and matplotlib.
+            </p>
+        </div>
+    </div>
+
+
+</div>
+
 
 {%endblock content%}
