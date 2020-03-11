@@ -11,6 +11,10 @@ import json
 from django.views.generic import TemplateView
 from django.http import JsonResponse
 from django.urls import path
+
+
+
+
 class CLAAAuth(TemplateView):
 
     """This entire app is largely seperate from the rest of the site, and is only run
@@ -31,6 +35,8 @@ class CLAAAuth(TemplateView):
                 redirect_uri = data['redirect_uri']
             CLAAAuth.sp_oauth = oauth2.SpotifyOAuth(client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri,
                                            scope='playlist-read-private', cache_path=".cache-user-token")
+
+
 
     def get(self,request,*args):
         rootdir = os.getcwd()
