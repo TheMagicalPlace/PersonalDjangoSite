@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import json
 
+
 with open("./cfg.json") as config_file:
     config = json.load(config_file)
 
@@ -45,7 +46,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
-    'CLAAServer.apps.CLAAServerConfig'
+    'CLAAServer.apps.CLAAServerConfig',
+    'mp4streaming.apps.Mp4StreamingConfig'
 ]
 
 MIDDLEWARE = [
